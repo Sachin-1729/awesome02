@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
         height:100,
         alignItems:'center',
         justifyContent:'center',
-        borderRadius:4,
+        borderRadius:4, 
         margin: 8
       },
       elevated: {
