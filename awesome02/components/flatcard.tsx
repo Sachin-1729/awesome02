@@ -4,68 +4,64 @@ import React from 'react'
 export default function flatcard() {
   return (
     <View>
-      <Text style={ styles.HeadingText}>Flatcard Man </Text>
-
-      <View style = { styles.container}>
-        <View >
-            <View style = { [styles.container , styles.red]}>
-            <Text>Red</Text>
-            </View>
-          
+      <Text style = {styles.headingText}>Flatcard hlo </Text>
+      <View style = {styles.container}>
+      <View style = {[styles.card , styles.cardOne]}>
+          <Text>Red</Text>
         </View>
-        <View>
-            <View style = { [styles.container , styles.green]}>
-            <Text>Green</Text>
-            </View>
-            
+        <View style = {[styles.card , styles.cardTwo]}>
+          <Text >Blue</Text>
         </View>
-        <View>
-            <View style = { [styles.container , styles.blue]}>
-            <Text>Blue</Text>
-            </View>
-            
-        </View> 
+        <View style = {[styles.card , styles.cardThree]}>
+          <Text >Green</Text>
+        </View>
+        <View style = {[styles.card , styles.cardOne]}>
+          <Text>Red</Text>
+        </View>
+       
       </View>
-      
-             
     </View>
-   
+    
     
   )
 }
 
 const styles = StyleSheet.create({
-    HeadingText : {
-        fontSize: 24,
-        fontWeight: 'bold',
-        // color: 'red'
-        color: 'blue',
-        paddingHorizontal: 20
-    },
-    container: {
-       
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        flexDirection: 'row'
-    },
-    red: {
-      
-       height: 100,
-       width : 100,
-       backgroundColor : 'red'
 
-    },
-    blue: {
-        height: 100,
-        width : 100,
-        backgroundColor :'blue'
-    },
-    green: {
-        height: 100,
-        width : 100, 
-        backgroundColor: 'green'
-    }
+  headingText: {
+    fontSize: 23,
+    fontWeight: 'bold',
+    paddingHorizontal: 10
+  },
+  container:
+  { 
+   flex:1,
+   flexDirection:'row',
+   padding:10,
+   margin:27,
+
+  },
+  card: {
+flex:1,
+justifyContent: 'center',
+alignItems:'center',
+width:100,
+height: 100,
+borderRadius:5,
 
 
-})
+  },
+  cardOne: {
+backgroundColor: '#EF5354',
+
+  },
+
+  cardTwo: {
+backgroundColor: '#5DA3FA'
+  },
+
+  cardThree: {
+    backgroundColor:'#50DBB4'
+      },
+
+}) 
